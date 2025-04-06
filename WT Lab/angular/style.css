@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    border: 2px solid black;
+    box-shadow:2px 2px 8px solid black;
+    height: 300px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+div{
+    
+    text-align: center;
+    
+}

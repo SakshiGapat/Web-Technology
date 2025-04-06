@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+</head>
+<body>
+    <!-- <h2>Employee Details</h2> -->
+    <div id="employeeTable"></div>
+
+    <script>
+        // Load XML and XSL files, then transform the XML using XSLT
+        function loadXMLDoc(filename) {
+            let xhttp = new XMLHttpRequest();
+            xhttp.open("GET", filename, false);
+            xhttp.send();
+            return xhttp.responseXML;
+        }
+
+        function displayXML() {
+            let xml = loadXMLDoc("employees.xml");  // Load employee XML data
+            let xsl = loadXMLDoc("employees.xsl");  // Load XSLT transformation
+
+            if (window.ActiveXObject || "ActiveXObject" in window) {
+                // For Internet Explorer
+                let transformed = xml.transformNode(xsl);
+                document.getElementById("employeeTable").innerHTML = transformed;
+            } else if (document.implementation && document.implementation.createDocument) {
+                // For modern browsers
+                let xsltProcessor = new XSLTProcessor();
+                xsltProcessor.importStylesheet(xsl);
+                let resultDocument = xsltProcessor.transformToFragment(xml, document);
+                document.getElementById("employeeTable").appendChild(resultDocument);
+            }
+        }
+
+        displayXML();
+    </script>
+</body>
+</html>

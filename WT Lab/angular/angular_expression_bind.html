@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="firstName='TE'">  <!--ng-model is used to link -->
+
+<p>Input something in the input box:</p>   <!--ng-bind is used to display-->
+<p>Name: <input type="text" ng-model="firstName"></p>
+<p>You wrote: {{ firstName }}</p>
+
+</div>
+
+</body>
+</html>
+
+

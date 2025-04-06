@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f6;
+    color: #333;
+  }
+  
+  header {
+    background-color: #d63384;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .shop-btn {
+    background-color: #d63384;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-btn:hover {
+    background-color: #c2185b;
+  }
+  
+  .featured {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .featured h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .flowers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .flower-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .flower-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  footer {
+    background-color: #d63384;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+  }

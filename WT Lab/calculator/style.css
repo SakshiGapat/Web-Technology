@@ -1,0 +1,40 @@
+*{
+    
+    
+    align-items: center;
+}
+
+#container{
+    width: 200px;
+    height:270px;
+    border:2px solid black;
+    align-content: center;
+    border-radius: 8px;
+    padding:2px;
+    background-color:rgb(221, 221, 252);
+    
+}
+
+#display{
+    margin: 5px;
+    padding:10px ;
+    align-items: center;
+    background-color: rgb(23, 231, 231);
+    border-radius: 5px;
+}
+
+button{
+    width:35px;
+    height:35px;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: rgb(241, 194, 232);
+}
+span{
+    padding: 40px;
+    margin: 50px;
+
+}
+
