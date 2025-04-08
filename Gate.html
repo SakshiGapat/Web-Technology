@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gate Registration Form</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    margin: 50px
+
+    }
+    .container{
+        max-width:400px;
+        padding:20px;
+        border:1px solid #ccc;
+        border-radius: 10px;
+        background: #f9f9f9;
+    }
+    label,input,select{
+        display:block;
+        margin-bottom:10px;
+    }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+        <h2>GATE Examination Registration</h2>
+        <form action="submit.php" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <lable for="password">Password:</lable>
+            <input for="password" id="password" name="password" required>
+
+            <laber>Gender:</laber>
+            <input type="radio" id="male" name="gender" value="Male" required>Male
+             
+            <input type="radio" id="female" name="gender" value="Female" required>Female
+
+            <label for="dob">Date Of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="branch">Select Branch</label>
+            <select id="branch" name="branch" required>
+                <option value="">--Select--</option>
+                <option value="CSE">Computer Science</option>
+                <option value="ENTC">Electronic & telecommunation</option>
+                <option value="ME">Mechanical Engineering</option>
+                <option value="CE">Civil Engineering</option>
+            </select>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agreed to the terms and conditions
+            </label>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            </form>
+            </div>
+
+
+</body>
+</html>
